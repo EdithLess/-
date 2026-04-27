@@ -1,0 +1,175 @@
+/* ===== Загальні стилі ===== */
+body {
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background: #f0f4f8;
+  color: #333;
+}
+
+/* ===== Контейнер програми ===== */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ===== Хедер ===== */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  background-color: #003c8f;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.header h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.student-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.student-switcher select {
+  border-radius: 8px;
+  border: 1px solid #b7c3d6;
+  padding: 8px 10px;
+}
+
+/* ===== Основний контент ===== */
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* ===== Карточка пари ===== */
+.pair-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pair-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.pair-card h3 {
+  color: #003c8f;
+  margin-bottom: 15px;
+}
+
+/* ===== Вибір предметів ===== */
+.subjects {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subject-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.subject-option:hover {
+  background-color: rgba(0, 60, 143, 0.1);
+}
+
+.subject-option input[type="radio"] {
+  cursor: pointer;
+}
+
+/* ===== Футер ===== */
+.footer {
+  margin-top: 40px;
+  background: #e3e9f0;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.footer h2 {
+  color: #003c8f;
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.footer li {
+  margin-bottom: 5px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.actions button {
+  background: #003c8f;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error-banner,
+.success-banner,
+.info-banner {
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 14px;
+}
+
+.error-banner {
+  background: #fdeaea;
+  color: #8e1a1a;
+}
+
+.success-banner {
+  background: #e8f6ea;
+  color: #1d6d2b;
+}
+
+.info-banner {
+  background: #eef3ff;
+  color: #23448f;
+}
+
+/* ===== Адаптивність ===== */
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}

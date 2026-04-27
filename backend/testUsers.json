@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Іван Петренко",
+    "email": "ivan.petrenko@shu.edu.ua",
+    "password": "hashed_password_here",
+    "role": "student",
+    "provider": "local"
+  },
+  {
+    "name": "Марія Ковальчук",
+    "email": "maria.kovalchuk@shu.edu.ua",
+    "password": "hashed_password_here",
+    "role": "student",
+    "provider": "local"
+  },
+  {
+    "name": "Олег Шевченко",
+    "email": "oleg.shevchenko@shu.edu.ua",
+    "password": "hashed_password_here",
+    "role": "student",
+    "provider": "local"
+  },
+  {
+    "name": "Тестовий Google Користувач",
+    "email": "test.google@shu.edu.ua",
+    "role": "student",
+    "provider": "google"
+  }
+]
